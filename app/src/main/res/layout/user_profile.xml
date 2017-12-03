@@ -1,0 +1,1617 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/swipe_refresh_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ScrollView
+        android:id="@+id/login_form"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+        android:padding="20dp" >
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:drawableLeft="@drawable/one_finger_swipe_down_scroll"
+            android:text="Για ανανέωση σύρετε την οθόνη προς τα κατω"
+            android:layout_marginTop="20dp"
+            android:textColor="#4099ff"
+            android:layout_marginBottom="20dp"/>
+
+        <View
+            android:layout_marginTop="10dp"
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:background="#4099ff"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:layout_gravity="center"
+            android:text="Προσωπικά Στοιχεία"
+            android:textColor="#4099ff"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="40dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Όνομα"
+            android:textSize="14sp"
+            android:textColor="#4099ff"
+            android:layout_marginBottom="10dp"/>
+
+        <EditText
+            android:id="@+id/onoma_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:textColor="@android:color/black"
+            android:padding="10dp"
+            style="@style/editext_graybg"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp">
+
+            <ImageView
+                android:id="@+id/editOnoma"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_create_white_48dp"
+                android:onClick="editClicked"/>
+
+            <ImageView
+                android:id="@+id/saveOnoma"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_save_white_48dp"
+                android:visibility="gone"
+                android:onClick="saveClicked"/>
+
+            <ImageView
+                android:id="@+id/undoOnoma"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/ic_undo_white_48dp"
+                android:onClick="undoClicked"
+                android:visibility="gone"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Επίθετο"
+            android:textSize="14sp"
+            android:textColor="#4099ff"
+            android:layout_marginBottom="10dp"/>
+
+        <EditText
+            android:id="@+id/epitheto_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:padding="10dp"
+            android:gravity="center"
+            android:textColor="@android:color/black"
+            style="@style/editext_graybg" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp">
+
+            <ImageView
+                android:id="@+id/editEpitheto"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_create_white_48dp"
+                android:onClick="editClicked"/>
+
+            <ImageView
+                android:id="@+id/saveEpitheto"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_save_white_48dp"
+                android:visibility="gone"
+                android:onClick="saveClicked"/>
+
+            <ImageView
+                android:id="@+id/undoEpitheto"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/ic_undo_white_48dp"
+                android:onClick="undoClicked"
+                android:visibility="gone"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Τηλέφωνο"
+            android:textSize="14sp"
+            android:textColor="#4099ff"
+            android:layout_marginBottom="10dp"/>
+
+        <EditText
+            android:id="@+id/tilefwno_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:padding="10dp"
+            android:gravity="center"
+            android:textColor="@android:color/black"
+            style="@style/editext_graybg" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp">
+
+            <ImageView
+                android:id="@+id/editTilefwno"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_create_white_48dp"
+                android:onClick="editClicked"/>
+
+            <ImageView
+                android:id="@+id/saveTilefwno"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_save_white_48dp"
+                android:visibility="gone"
+                android:onClick="saveClicked"/>
+
+            <ImageView
+                android:id="@+id/undoTilefwno"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/ic_undo_white_48dp"
+                android:onClick="undoClicked"
+                android:visibility="gone"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Email"
+            android:textSize="14sp"
+            android:textColor="#4099ff"
+            android:layout_marginBottom="10dp"/>
+
+        <EditText
+            android:id="@+id/email_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:padding="10dp"
+            android:gravity="center"
+            android:textColor="@android:color/black"
+            style="@style/editext_graybg" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp">
+
+            <ImageView
+                android:id="@+id/editEmail"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_create_white_48dp"
+                android:onClick="editClicked"/>
+
+            <ImageView
+                android:id="@+id/saveEmail"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_save_white_48dp"
+                android:visibility="gone"
+                android:onClick="saveClicked"/>
+
+            <ImageView
+                android:id="@+id/undoEmail"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/ic_undo_white_48dp"
+                android:onClick="undoClicked"
+                android:visibility="gone"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_marginTop="10dp"
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:background="#4099ff"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:layout_gravity="center"
+            android:text="Διεύθυνση"
+            android:textStyle="bold"
+            android:textColor="#4099ff"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="40dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Οδός"
+            android:textSize="14sp"
+            android:textColor="#4099ff"
+            android:layout_marginBottom="10dp"/>
+
+        <EditText
+            android:id="@+id/odos_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:padding="10dp"
+            style="@style/editext_graybg"
+            android:textColor="@android:color/black"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp">
+
+            <ImageView
+                android:id="@+id/editOdos"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_create_white_48dp"
+                android:onClick="editClicked"/>
+
+            <ImageView
+                android:id="@+id/saveOdos"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_save_white_48dp"
+                android:onClick="saveClicked"
+                android:visibility="gone"/>
+
+            <ImageView
+                android:id="@+id/undoOdos"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/ic_undo_white_48dp"
+                android:onClick="undoClicked"
+                android:visibility="gone"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Αριθμός"
+            android:textSize="14sp"
+            android:textColor="#4099ff"
+            android:layout_marginBottom="10dp"/>
+
+        <EditText
+            android:id="@+id/arithmos_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:padding="10dp"
+            style="@style/editext_graybg"
+            android:textColor="@android:color/black"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp">
+
+            <ImageView
+                android:id="@+id/editArithmos"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:onClick="editClicked"
+                android:src="@drawable/ic_create_white_48dp"/>
+
+            <ImageView
+                android:id="@+id/saveArithmos"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:onClick="saveClicked"
+                android:src="@drawable/ic_save_white_48dp"
+                android:visibility="gone"/>
+
+            <ImageView
+                android:id="@+id/undoArithmos"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/ic_undo_white_48dp"
+                android:onClick="undoClicked"
+                android:visibility="gone"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Δήμος"
+            android:textSize="14sp"
+            android:textColor="#4099ff"
+            android:layout_marginBottom="10dp"/>
+
+        <EditText
+            android:id="@+id/perioxi_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:padding="10dp"
+            android:gravity="center"
+            android:textColor="@android:color/black"
+            style="@style/editext_graybg" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp">
+
+            <ImageView
+                android:id="@+id/editDimos"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:onClick="editClicked"
+                android:src="@drawable/ic_create_white_48dp"/>
+
+            <ImageView
+                android:id="@+id/saveDimos"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_save_white_48dp"
+                android:onClick="saveClicked"
+                android:visibility="gone"/>
+
+            <ImageView
+                android:id="@+id/undoDimos"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/ic_undo_white_48dp"
+                android:onClick="undoClicked"
+                android:visibility="gone"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Νομός"
+            android:textSize="14sp"
+            android:textColor="#4099ff"
+            android:layout_marginBottom="10dp"/>
+
+        <Spinner
+            android:id="@+id/nomos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            android:gravity="center"
+            android:textColor="@android:color/black" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp">
+
+            <ImageView
+                android:id="@+id/editNomos"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:onClick="editClicked"
+                android:src="@drawable/ic_create_white_48dp"/>
+
+            <ImageView
+                android:id="@+id/saveNomos"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_save_white_48dp"
+                android:onClick="saveClicked"
+                android:visibility="gone"/>
+
+            <ImageView
+                android:id="@+id/undoNomos"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/ic_undo_white_48dp"
+                android:onClick="undoClicked"
+                android:visibility="gone"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_marginTop="40dp"
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:background="#4099ff"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Πληροφορίες Παροχής Εκπαιδευτικής Υπηρεσίας"
+            android:textStyle="bold"
+            android:textColor="#4099ff"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="40dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Κατηγορία"
+            android:textSize="14sp"
+            android:textColor="#4099ff"
+            android:layout_marginBottom="10dp"/>
+
+        <Spinner
+            android:id="@+id/category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            android:gravity="center"
+            android:textColor="@android:color/black"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp">
+
+            <ImageView
+                android:id="@+id/editKatigoria1"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:onClick="editClicked"
+                android:src="@drawable/ic_create_white_48dp"/>
+
+            <ImageView
+                android:id="@+id/saveKatigoria1"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_save_white_48dp"
+                android:onClick="saveClicked"
+                android:visibility="gone"/>
+
+            <ImageView
+                android:id="@+id/undoKatigoria1"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/ic_undo_white_48dp"
+                android:onClick="undoClicked"
+                android:visibility="gone"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/eidikotita_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Ειδικότητα"
+            android:textSize="14sp"
+            android:textColor="#4099ff"
+            android:layout_marginBottom="10dp"/>
+
+        <Spinner
+            android:id="@+id/eidikotita"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            android:gravity="center"
+            android:textColor="@android:color/black"/>
+
+        <LinearLayout
+            android:id="@+id/eidikotita1controls"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/editEidikotita1"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:onClick="editClicked"
+                android:src="@drawable/ic_create_white_48dp"/>
+
+            <ImageView
+                android:id="@+id/saveEidikotita1"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_save_white_48dp"
+                android:onClick="saveClicked"
+                android:visibility="gone"/>
+
+            <ImageView
+                android:id="@+id/undoEidikotita1"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/ic_undo_white_48dp"
+                android:onClick="undoClicked"
+                android:visibility="gone"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Πιστοποίηση"
+            android:textSize="14sp"
+            android:textColor="#4099ff"
+            android:layout_marginBottom="10dp"/>
+
+        <EditText
+            android:id="@+id/pistopoiisi_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:inputType="textMultiLine"
+            android:padding="10dp"
+            style="@style/editext_graybg"
+            android:lines="6"
+            android:gravity="top|left"
+            android:textColor="@android:color/black"
+            android:layout_marginBottom="10dp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp">
+
+            <ImageView
+                android:id="@+id/editPistopoiisi1"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:onClick="editClicked"
+                android:src="@drawable/ic_create_white_48dp"/>
+
+            <ImageView
+                android:id="@+id/savePistopoiisi1"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:onClick="saveClicked"
+                android:src="@drawable/ic_save_white_48dp"
+                android:visibility="gone"/>
+
+            <ImageView
+                android:id="@+id/undoPistopoiisi1"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/ic_undo_white_48dp"
+                android:onClick="undoClicked"
+                android:visibility="gone"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Αγγελία"
+            android:textSize="14sp"
+            android:textColor="#4099ff"
+            android:layout_marginBottom="10dp"/>
+
+        <EditText
+            android:id="@+id/aggelia_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            android:inputType="textMultiLine"
+            android:lines="8"
+            android:gravity="top|left"
+            android:textColor="@android:color/black"
+            android:layout_marginBottom="10dp"
+            style="@style/editext_graybg" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:id="@+id/editAggelia1"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:onClick="editClicked"
+                android:src="@drawable/ic_create_white_48dp"/>
+
+            <ImageView
+                android:id="@+id/saveAggelia1"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:onClick="saveClicked"
+                android:src="@drawable/ic_save_white_48dp"
+                android:visibility="gone"/>
+
+            <ImageView
+                android:id="@+id/undoAggelia1"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/ic_undo_white_48dp"
+                android:onClick="undoClicked"
+                android:visibility="gone"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/second_set_question"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Θέλετε να προσθέσετε και δεύτερο σύνολο στοιχειων;"
+                android:textColor="@color/blue"
+                android:layout_weight="1"/>
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/add_icon"
+                android:onClick="addClicked"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/second_set"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:visibility="gone">
+
+            <View
+                android:layout_marginTop="40dp"
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:background="#4099ff"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:text="Πληροφορίες Παροχής Εκπαιδευτικής Υπηρεσίας 2"
+                android:textColor="#4099ff"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="40dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Κατηγορία"
+                android:textSize="14sp"
+                android:textColor="#4099ff"
+                android:layout_marginBottom="10dp"/>
+
+            <Spinner
+                android:id="@+id/category2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@android:color/black"
+                android:layout_marginBottom="10dp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp">
+
+                <ImageView
+                    android:id="@+id/editKatigoria2"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:onClick="editClicked"
+                    android:src="@drawable/ic_create_white_48dp"/>
+
+                <ImageView
+                    android:id="@+id/saveKatigoria2"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:onClick="saveClicked"
+                    android:src="@drawable/ic_save_white_48dp"
+                    android:visibility="gone"/>
+
+                <ImageView
+                    android:id="@+id/undoKatigoria2"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/ic_undo_white_48dp"
+                    android:onClick="undoClicked"
+                    android:visibility="gone"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/eidikotita2_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Ειδικότητα"
+                android:textSize="14sp"
+                android:textColor="#4099ff"
+                android:layout_marginBottom="10dp"
+                android:visibility="visible"/>
+
+            <Spinner
+                android:id="@+id/eidikotita2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="@android:color/black"
+                android:gravity="center"
+                android:layout_marginBottom="10dp"
+                android:visibility="visible"/>
+
+            <LinearLayout
+                android:id="@+id/eidikotita2controls"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp">
+
+                <ImageView
+                    android:id="@+id/editEidikotita2"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:onClick="editClicked"
+                    android:src="@drawable/ic_create_white_48dp"/>
+
+                <ImageView
+                    android:id="@+id/saveEidikotita2"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:onClick="saveClicked"
+                    android:src="@drawable/ic_save_white_48dp"
+                    android:visibility="gone"/>
+
+                <ImageView
+                    android:id="@+id/undoEidikotita2"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/ic_undo_white_48dp"
+                    android:onClick="undoClicked"
+                    android:visibility="gone"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Πιστοποίηση"
+                android:textSize="14sp"
+                android:textColor="#4099ff"
+                android:layout_marginBottom="10dp"/>
+
+            <EditText
+                android:id="@+id/pistopoiisi2_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:inputType="textMultiLine"
+                android:padding="10dp"
+                android:lines="6"
+                android:gravity="top|left"
+                android:textColor="@android:color/black"
+                style="@style/editext_graybg"
+                android:layout_marginBottom="10dp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp">
+
+                <ImageView
+                    android:id="@+id/editPistopoiisi2"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:onClick="editClicked"
+                    android:src="@drawable/ic_create_white_48dp"/>
+
+                <ImageView
+                    android:id="@+id/savePistopoiisi2"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:onClick="saveClicked"
+                    android:src="@drawable/ic_save_white_48dp"
+                    android:visibility="gone"/>
+
+                <ImageView
+                    android:id="@+id/undoPistopoiisi2"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/ic_undo_white_48dp"
+                    android:onClick="undoClicked"
+                    android:visibility="gone"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Αγγελία"
+                android:textSize="14sp"
+                android:textColor="#4099ff"
+                android:layout_marginBottom="10dp"/>
+
+            <EditText
+                android:id="@+id/aggelia2_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="10dp"
+                android:inputType="textMultiLine"
+                android:lines="8"
+                android:gravity="top|left"
+                android:textColor="@android:color/black"
+                style="@style/editext_graybg"
+                android:layout_marginBottom="10dp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+
+                <ImageView
+                    android:id="@+id/editAggelia2"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:onClick="editClicked"
+                    android:src="@drawable/ic_create_white_48dp"/>
+
+                <ImageView
+                    android:id="@+id/saveAggelia2"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:onClick="saveClicked"
+                    android:src="@drawable/ic_save_white_48dp"
+                    android:visibility="gone"/>
+
+                <ImageView
+                    android:id="@+id/undoAggelia2"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/ic_undo_white_48dp"
+                    android:onClick="undoClicked"
+                    android:visibility="gone"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/third_set_question"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="Θέλετε να προσθέσετε και τρίτο σύνολο στοιχειων;"
+                    android:textColor="@color/blue"
+                    android:layout_weight="1"/>
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/add_icon"
+                    android:onClick="addClicked2"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/second_set_subtract"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:visibility="visible">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="Θέλετε να αφαιρέσετε το δεύτερο σύνολο στοιχείων;"
+                    android:textColor="@color/blue"
+                    android:layout_weight="1"/>
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="10dp"
+                    android:onClick="subtractClicked"
+                    android:src="@drawable/subtract_icon"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/third_set"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:visibility="gone">
+
+            <View
+                android:layout_marginTop="40dp"
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:background="#4099ff"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Πληροφορίες Παροχής Εκπαιδευτικής Υπηρεσίας 3"
+                android:textStyle="bold"
+                android:textColor="#4099ff"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="40dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Κατηγορία"
+                android:textSize="14sp"
+                android:textColor="#4099ff"
+                android:layout_marginBottom="10dp"/>
+
+            <Spinner
+                android:id="@+id/category3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@android:color/black"
+                android:layout_marginBottom="10dp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp">
+
+                <ImageView
+                    android:id="@+id/editKatigoria3"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:onClick="editClicked"
+                    android:src="@drawable/ic_create_white_48dp"/>
+
+                <ImageView
+                    android:id="@+id/saveKatigoria3"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:onClick="saveClicked"
+                    android:src="@drawable/ic_save_white_48dp"
+                    android:visibility="gone"/>
+
+                <ImageView
+                    android:id="@+id/undoKatigoria3"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/ic_undo_white_48dp"
+                    android:onClick="undoClicked"
+                    android:visibility="gone"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/eidikotita3_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Ειδικότητα"
+                android:textSize="14sp"
+                android:textColor="#4099ff"
+                android:layout_marginBottom="10dp"
+                android:visibility="visible"/>
+
+            <Spinner
+                android:id="@+id/eidikotita3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="@android:color/black"
+                android:gravity="center"
+                android:layout_marginBottom="10dp"
+                android:visibility="visible"/>
+
+            <LinearLayout
+                android:id="@+id/eidikotita3controls"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp">
+
+                <ImageView
+                    android:id="@+id/editEidikotita3"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:onClick="editClicked"
+                    android:src="@drawable/ic_create_white_48dp"/>
+
+                <ImageView
+                    android:id="@+id/saveEidikotita3"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:onClick="saveClicked"
+                    android:src="@drawable/ic_save_white_48dp"
+                    android:visibility="gone"/>
+
+                <ImageView
+                    android:id="@+id/undoEidikotita3"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/ic_undo_white_48dp"
+                    android:onClick="undoClicked"
+                    android:visibility="gone"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Πιστοποίηση"
+                android:textSize="14sp"
+                android:textColor="#4099ff"
+                android:layout_marginBottom="10dp"/>
+
+            <EditText
+                android:id="@+id/pistopoiisi3_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="10dp"
+                android:inputType="textMultiLine"
+                android:lines="6"
+                android:gravity="top|left"
+                android:textColor="@android:color/black"
+                style="@style/editext_graybg"
+                android:layout_marginBottom="10dp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp">
+
+                <ImageView
+                    android:id="@+id/editPistopoiisi3"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:onClick="editClicked"
+                    android:src="@drawable/ic_create_white_48dp"/>
+
+                <ImageView
+                    android:id="@+id/savePistopoiisi3"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:onClick="saveClicked"
+                    android:src="@drawable/ic_save_white_48dp"
+                    android:visibility="gone"/>
+
+                <ImageView
+                    android:id="@+id/undoPistopoiisi3"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/ic_undo_white_48dp"
+                    android:onClick="undoClicked"
+                    android:visibility="gone"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Αγγελία"
+                android:textSize="14sp"
+                android:textColor="#4099ff"
+                android:layout_marginBottom="10dp"/>
+
+            <EditText
+                android:id="@+id/aggelia3_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="10dp"
+                android:inputType="textMultiLine"
+                android:lines="8"
+                android:gravity="top|left"
+                android:textColor="@android:color/black"
+                style="@style/editext_graybg"
+                android:layout_marginBottom="10dp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+
+                <ImageView
+                    android:id="@+id/editAggelia3"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:onClick="editClicked"
+                    android:src="@drawable/ic_create_white_48dp"/>
+
+                <ImageView
+                    android:id="@+id/saveAggelia3"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:onClick="saveClicked"
+                    android:src="@drawable/ic_save_white_48dp"
+                    android:visibility="gone"/>
+
+                <ImageView
+                    android:id="@+id/undoAggelia3"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/ic_undo_white_48dp"
+                    android:onClick="undoClicked"
+                    android:visibility="gone"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/forth_set_question"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="Θέλετε να προσθέσετε και τέταρτο σύνολο στοιχειων;"
+                    android:textColor="@color/blue"
+                    android:layout_weight="1"/>
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/add_icon"
+                    android:onClick="addClicked3"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/third_set_subtract"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="Θέλετε να αφαιρέσετε το τρίτο σύνολο στοιχείων;"
+                    android:textColor="@color/blue"
+                    android:layout_weight="1"/>
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/subtract_icon"
+                    android:onClick="subtractClicked2"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/forth_set"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:visibility="gone">
+
+            <View
+                android:layout_marginTop="40dp"
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:background="#4099ff"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:text="Πληροφορίες Παροχής Εκπαιδευτικής Υπηρεσίας 4"
+                android:textColor="#4099ff"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="40dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Κατηγορία"
+                android:textSize="14sp"
+                android:textColor="#4099ff"
+                android:layout_marginBottom="10dp"/>
+
+            <Spinner
+                android:id="@+id/category4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@android:color/black"
+                android:layout_marginBottom="10dp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp">
+
+                <ImageView
+                    android:id="@+id/editKatigoria4"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:onClick="editClicked"
+                    android:src="@drawable/ic_create_white_48dp"/>
+
+                <ImageView
+                    android:id="@+id/saveKatigoria4"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:onClick="saveClicked"
+                    android:src="@drawable/ic_save_white_48dp"
+                    android:visibility="gone"/>
+
+                <ImageView
+                    android:id="@+id/undoKatigoria4"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/ic_undo_white_48dp"
+                    android:onClick="undoClicked"
+                    android:visibility="gone"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/eidikotita4_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Ειδικότητα"
+                android:textSize="14sp"
+                android:textColor="#4099ff"
+                android:layout_marginBottom="10dp"
+                android:visibility="visible"/>
+
+            <Spinner
+                android:id="@+id/eidikotita4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@android:color/black"
+                android:layout_marginBottom="10dp"
+                android:visibility="visible"/>
+
+            <LinearLayout
+                android:id="@+id/eidikotita4controls"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp">
+
+                <ImageView
+                    android:id="@+id/editEidikotita4"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:onClick="editClicked"
+                    android:src="@drawable/ic_create_white_48dp"/>
+
+                <ImageView
+                    android:id="@+id/saveEidikotita4"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:onClick="saveClicked"
+                    android:src="@drawable/ic_save_white_48dp"
+                    android:visibility="gone"/>
+
+                <ImageView
+                    android:id="@+id/undoEidikotita4"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/ic_undo_white_48dp"
+                    android:onClick="undoClicked"
+                    android:visibility="gone"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Πιστοποίηση"
+                android:textSize="14sp"
+                android:textColor="#4099ff"
+                android:layout_marginBottom="10dp"/>
+
+            <EditText
+                android:id="@+id/pistopoiisi4_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="10dp"
+                android:lines="6"
+                android:inputType="textMultiLine"
+                android:gravity="top|left"
+                android:textColor="@android:color/black"
+                style="@style/editext_graybg"
+                android:layout_marginBottom="10dp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp">
+
+                <ImageView
+                    android:id="@+id/editPistopoiisi4"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:onClick="editClicked"
+                    android:src="@drawable/ic_create_white_48dp"/>
+
+                <ImageView
+                    android:id="@+id/savePistopoiisi4"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:onClick="saveClicked"
+                    android:src="@drawable/ic_save_white_48dp"
+                    android:visibility="gone"/>
+
+                <ImageView
+                    android:id="@+id/undoPistopoiisi4"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/ic_undo_white_48dp"
+                    android:onClick="undoClicked"
+                    android:visibility="gone"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Αγγελία"
+                android:textSize="14sp"
+                android:textColor="#4099ff"
+                android:layout_marginBottom="10dp"/>
+
+            <EditText
+                android:id="@+id/aggelia4_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="10dp"
+                android:inputType="textMultiLine"
+                android:lines="8"
+                android:gravity="top|left"
+                android:textColor="@android:color/black"
+                style="@style/editext_graybg"
+                android:layout_marginBottom="10dp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+
+                <ImageView
+                    android:id="@+id/editAggelia4"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:onClick="editClicked"
+                    android:src="@drawable/ic_create_white_48dp"/>
+
+                <ImageView
+                    android:id="@+id/saveAggelia4"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:onClick="saveClicked"
+                    android:src="@drawable/ic_save_white_48dp"
+                    android:visibility="gone"/>
+
+                <ImageView
+                    android:id="@+id/undoAggelia4"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/ic_undo_white_48dp"
+                    android:onClick="undoClicked"
+                    android:visibility="gone"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="Θέλετε να αφαιρέσετε το τέταρτο σύνολο στοιχείων;"
+                    android:textColor="@color/blue"
+                    android:layout_weight="1"/>
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/subtract_icon"
+                    android:onClick="subtractClicked3"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/photo_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:layout_gravity="center"
+                android:text="Φωτογραφία"
+                android:textColor="#4099ff"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="30dp"/>
+
+            <com.parse.ParseImageView
+                android:id="@+id/photo"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
+
+</android.support.v4.widget.SwipeRefreshLayout>
+
+

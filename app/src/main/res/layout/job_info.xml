@@ -1,0 +1,746 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Login"
+    android:id="@+id/login_form"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center"
+    android:padding="20dp" >
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" >
+    
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:layout_gravity="center"
+                android:text="Πληροφορίες Παροχής Εκπαιδευτικής Υπηρεσίας"
+                android:gravity="center"
+                android:textColor="#4099ff"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="40dp"/>
+    
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Κατηγορία"
+                android:textSize="14sp"
+                android:textColor="#4099ff"
+                android:layout_marginBottom="10dp"/>
+            
+            <Spinner
+                android:id="@+id/category"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginBottom="10dp"/>
+    
+            <TextView
+                android:id="@+id/eidikotita_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Ειδικότητα"
+                android:textSize="14sp"
+                android:textColor="#4099ff"
+                android:layout_marginBottom="10dp"
+                android:visibility="gone"/>
+    
+            <Spinner
+                android:id="@+id/eidikotita"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:visibility="gone"/>
+    
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Πιστοποίηση"
+                android:textSize="14sp"
+                android:textColor="#4099ff"
+                android:layout_marginBottom="10dp"/>
+    
+            <EditText
+                android:id="@+id/pistopoiisi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:inputType="textMultiLine"
+                android:gravity="top|left"
+                android:lines="6"
+                android:hint="Εδώ γράφετε αν κατέχετε κάποιο πιστοποιητικο για την υπηρεσία που παρέχετε (π.χ. Συγκεκριμένο Πτυχίο). Το όριο είναι 120 χαρακτήρες."
+                android:padding="10dp"
+                android:maxLength="120"
+                android:textColor="@android:color/black"
+                android:textColorHint="@color/input_login_hint"
+                style="@style/editext_graybg"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:id="@+id/empty_pistopoiisi_error"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Δεν έχετε συμπληρώσει στοιχεία πιστοποίησης!"
+                android:layout_marginBottom="10dp"
+                android:textColor="@android:color/holo_red_light"
+                android:visibility="gone"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Αγγελία"
+                android:textSize="14sp"
+                android:textColor="#4099ff"
+                android:layout_marginBottom="10dp"/>
+
+            <EditText
+                android:id="@+id/aggelia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:inputType="textMultiLine"
+                android:padding="10dp"
+                android:maxLength="160"
+                android:lines="8"
+                android:hint="Εδώ γράφετε συνοπτικά πληροφορίες για την αγγελία σας. Το όριο είναι 160 χαρακτήρες."
+                android:gravity="top|left"
+                android:textColor="@android:color/black"
+                android:textColorHint="@color/input_login_hint"
+                style="@style/editext_graybg" />
+
+            <TextView
+                android:id="@+id/empty_aggelia_error"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Δεν έχετε συμπληρώσει την αγγελία!"
+                android:layout_marginTop="10dp"
+                android:textColor="@android:color/holo_red_light"
+                android:visibility="gone"/>
+
+            <LinearLayout
+                android:id="@+id/second_set_question"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp">
+                
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="Θέλετε να προσθέσετε και δεύτερο σύνολο στοιχειων;"
+                    android:textColor="@color/blue"
+                    android:layout_weight="1"/>
+                
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/add_icon"
+                    android:onClick="addClicked"/>
+
+            </LinearLayout>
+    
+        </LinearLayout>
+    
+        <LinearLayout
+            android:id="@+id/second_set"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:visibility="gone">
+
+            <View
+                android:layout_marginTop="20dp"
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:background="#4099ff"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Πληροφορίες Παροχής Εκπαιδευτικής Υπηρεσίας 2"
+                android:textColor="#4099ff"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="40dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Κατηγορία"
+                android:textSize="14sp"
+                android:textColor="#4099ff"
+                android:layout_marginBottom="10dp"/>
+
+            <Spinner
+                android:id="@+id/category2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginBottom="10dp" />
+
+            <TextView
+                android:id="@+id/eidikotita2_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Ειδικότητα"
+                android:textSize="14sp"
+                android:textColor="#4099ff"
+                android:layout_marginBottom="10dp"
+                android:visibility="gone"/>
+
+            <Spinner
+                android:id="@+id/eidikotita2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginBottom="10dp"
+                android:visibility="gone"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Πιστοποίηση"
+                android:textSize="14sp"
+                android:textColor="#4099ff"
+                android:layout_marginBottom="10dp"/>
+
+            <EditText
+                android:id="@+id/pistopoiisi2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:inputType="textMultiLine"
+                android:padding="10dp"
+                android:lines="6"
+                android:hint="Εδώ γράφετε αν κατέχετε κάποιο πιστοποιητικο για την υπηρεσία που παρέχετε (π.χ. Συγκεκριμένο Πτυχίο). Το όριο είναι 120 χαρακτήρες."
+                android:maxLength="120"
+                android:gravity="top|left"
+                android:textColor="@android:color/black"
+                android:textColorHint="@color/input_login_hint"
+                style="@style/editext_graybg"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:id="@+id/empty_pistopoiisi2_error"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Δεν έχετε συμπληρώσει στοιχεία πιστοποίησης!"
+                android:layout_marginBottom="10dp"
+                android:textColor="@android:color/holo_red_light"
+                android:visibility="gone"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Αγγελία"
+                android:textSize="14sp"
+                android:textColor="#4099ff"
+                android:layout_marginBottom="10dp"/>
+
+            <EditText
+                android:id="@+id/aggelia2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:inputType="textMultiLine"
+                android:padding="10dp"
+                android:maxLength="160"
+                android:lines="8"
+                android:hint="Εδώ γράφετε συνοπτικά πληροφορίες για την αγγελία σας. Το όριο είναι 160 χαρακτήρες."
+                android:gravity="top|left"
+                android:textColor="@android:color/black"
+                android:textColorHint="@color/input_login_hint"
+                style="@style/editext_graybg" />
+
+            <TextView
+                android:id="@+id/empty_aggelia2_error"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Δεν έχετε συμπληρώσει την αγγελία!"
+                android:layout_marginTop="10dp"
+                android:textColor="@android:color/holo_red_light"
+                android:visibility="gone"/>
+
+            <LinearLayout
+                android:id="@+id/third_set_question"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="Θέλετε να προσθέσετε και τρίτο σύνολο στοιχειων;"
+                    android:textColor="@color/blue"
+                    android:layout_weight="1"/>
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/add_icon"
+                    android:onClick="addClicked2"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/second_set_subtract"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:visibility="visible">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="Θέλετε να αφαιρέσετε το δεύτερο σύνολο στοιχείων;"
+                    android:textColor="@color/blue"
+                    android:layout_weight="1"/>
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="10dp"
+                    android:onClick="subtractClicked"
+                    android:src="@drawable/subtract_icon"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/third_set"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:visibility="gone">
+
+            <View
+                android:layout_marginTop="20dp"
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:background="#4099ff"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:layout_gravity="center"
+                android:text="Πληροφορίες Παροχής Εκπαιδευτικής Υπηρεσίας 3"
+                android:textColor="#4099ff"
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="40dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Κατηγορία"
+                android:textSize="14sp"
+                android:textColor="#4099ff"
+                android:layout_marginBottom="10dp"/>
+
+            <Spinner
+                android:id="@+id/category3"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp" />
+
+            <TextView
+                android:id="@+id/eidikotita3_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Ειδικότητα"
+                android:textSize="14sp"
+                android:textColor="#4099ff"
+                android:layout_marginBottom="10dp"/>
+
+            <Spinner
+                android:id="@+id/eidikotita3"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Πιστοποίηση"
+                android:textSize="14sp"
+                android:textColor="#4099ff"
+                android:layout_marginBottom="10dp"/>
+
+            <EditText
+                android:id="@+id/pistopoiisi3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:inputType="textMultiLine"
+                android:padding="10dp"
+                android:lines="6"
+                android:maxLength="120"
+                android:gravity="top|left"
+                android:hint="Εδώ γράφετε αν κατέχετε κάποιο πιστοποιητικο για την υπηρεσία που παρέχετε (π.χ. Συγκεκριμένο Πτυχίο). Το όριο είναι 120 χαρακτήρες."
+                android:textColor="@android:color/black"
+                android:textColorHint="@color/input_login_hint"
+                style="@style/editext_graybg"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:id="@+id/empty_pistopoiisi3_error"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Δεν έχετε συμπληρώσει στοιχεία πιστοποίησης!"
+                android:layout_marginBottom="10dp"
+                android:textColor="@android:color/holo_red_light"
+                android:visibility="gone"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Αγγελία"
+                android:textSize="14sp"
+                android:textColor="#4099ff"
+                android:layout_marginBottom="10dp"/>
+
+            <EditText
+                android:id="@+id/aggelia3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:inputType="textMultiLine"
+                android:padding="10dp"
+                android:maxLength="160"
+                android:lines="8"
+                android:gravity="top|left"
+                android:hint="Εδώ γράφετε συνοπτικά πληροφορίες για την αγγελία σας. Το όριο είναι 160 χαρακτήρες."
+                android:textColor="@android:color/black"
+                android:textColorHint="@color/input_login_hint"
+                style="@style/editext_graybg" />
+
+            <TextView
+                android:id="@+id/empty_aggelia3_error"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Δεν έχετε συμπληρώσει την αγγελία!"
+                android:layout_marginTop="10dp"
+                android:textColor="@android:color/holo_red_light"
+                android:visibility="gone"/>
+
+            <LinearLayout
+                android:id="@+id/forth_set_question"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="Θέλετε να προσθέσετε και τέταρτο σύνολο στοιχειων;"
+                    android:textColor="@color/blue"
+                    android:layout_weight="1"/>
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/add_icon"
+                    android:onClick="addClicked3"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/third_set_subtract"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="Θέλετε να αφαιρέσετε το τρίτο σύνολο στοιχείων;"
+                    android:textColor="@color/blue"
+                    android:layout_weight="1"/>
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/subtract_icon"
+                    android:onClick="subtractClicked2"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/forth_set"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:visibility="gone">
+
+            <View
+                android:layout_marginTop="20dp"
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:background="#4099ff"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:layout_gravity="center"
+                android:text="Πληροφορίες Παροχής Εκπαιδευτικής Υπηρεσίας 4"
+                android:textColor="#4099ff"
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="40dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Κατηγορία"
+                android:textSize="14sp"
+                android:textColor="#4099ff"
+                android:layout_marginBottom="10dp"/>
+
+            <Spinner
+                android:id="@+id/category4"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp" />
+
+            <TextView
+                android:id="@+id/eidikotita4_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Ειδικότητα"
+                android:textSize="14sp"
+                android:textColor="#4099ff"
+                android:layout_marginBottom="10dp"/>
+
+            <Spinner
+                android:id="@+id/eidikotita4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginBottom="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Πιστοποίηση"
+                android:textSize="14sp"
+                android:textColor="#4099ff"
+                android:layout_marginBottom="10dp"/>
+
+            <EditText
+                android:id="@+id/pistopoiisi4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:inputType="textMultiLine"
+                android:padding="10dp"
+                android:lines="6"
+                android:maxLength="120"
+                android:hint="Εδώ γράφετε αν κατέχετε κάποιο πιστοποιητικο για την υπηρεσία που παρέχετε (π.χ. Συγκεκριμένο Πτυχίο). Το όριο είναι 120 χαρακτήρες."
+                android:gravity="top|left"
+                android:textColor="@android:color/black"
+                android:textColorHint="@color/input_login_hint"
+                style="@style/editext_graybg"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:id="@+id/empty_pistopoiisi4_error"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Δεν έχετε συμπληρώσει στοιχεία πιστοποίησης!"
+                android:layout_marginBottom="10dp"
+                android:textColor="@android:color/holo_red_light"
+                android:visibility="gone"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Αγγελία"
+                android:textSize="14sp"
+                android:textColor="#4099ff"
+                android:layout_marginBottom="10dp"/>
+
+            <EditText
+                android:id="@+id/aggelia4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:inputType="textMultiLine"
+                android:padding="10dp"
+                android:maxLength="160"
+                android:lines="8"
+                android:hint="Εδώ γράφετε συνοπτικά πληροφορίες για την αγγελία σας. Το όριο είναι 160 χαρακτήρες."
+                android:gravity="top|left"
+                android:textColor="@android:color/black"
+                android:textColorHint="@color/input_login_hint"
+                style="@style/editext_graybg" />
+
+            <TextView
+                android:id="@+id/empty_aggelia4_error"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Δεν έχετε συμπληρώσει την αγγελία!"
+                android:layout_marginTop="10dp"
+                android:textColor="@android:color/holo_red_light"
+                android:visibility="gone"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="Θέλετε να αφαιρέσετε το τέταρτο σύνολο στοιχείων;"
+                    android:textColor="@color/blue"
+                    android:layout_weight="1"/>
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/subtract_icon"
+                    android:onClick="subtractClicked3"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+    
+            <Button
+                android:layout_marginTop="40dp"
+                android:id="@+id/next"
+                style="@style/btn_white_large"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="40dp"
+                android:text="Επόμενο"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:drawableRight="@drawable/arrow_right"/>
+    
+            <Button
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:id="@+id/back"
+                style="@style/btn_white_large"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="40dp"
+                android:text="Προηγούμενο"
+                android:drawableLeft="@drawable/arrow_left"/>
+            
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
+

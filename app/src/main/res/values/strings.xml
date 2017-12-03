@@ -1,0 +1,111 @@
+<resources>
+    <string name="app_name">Tutor Anytime</string>
+    <string name="title_activity_splash_screen">SplashScreen</string>
+    <string name="progress_login">Πιστοποίηση Χρήστη&#8230;</string>
+    <string name="progress_register">Έλεγχος Ονόματος Χρήστη&#8230;</string>
+    <string name="alert_loading">Φορτώνονται οι Χρήστες&#8230;</string>
+    <string name="msg_no_user_found">Δεν υπάρχουν χρήστες για chat!</string>
+    <string name="type_msg">Γράψτε εδώ</string>
+    <string name="error_intro">"Παρακαλώ "</string>
+    <string name="error_blank_username">εισάγετε όνομα χρήστη</string>
+    <string name="error_blank_password">εισάγετε κωδικό</string>
+    <string name="error_mismatched_passwords">εισάγετε τον ίδιο κωδικό ξανά</string>
+    <string name="error_join">", και "</string>
+    <string name="error_end">.</string>
+    <string name="progress_personal">Έλεγχος Προσωπικών Στοιχείων</string>
+    <string name="gps_prompt">Παρακαλείστε να ενεργοποιήσετε το gps για καλύτερο προσδιορισμό της θέσης σας στον χάρτη</string>
+    <string name="open_gps">Ρύθμιση gps</string>
+    <string name="cancel">Όχι τώρα</string>
+    <string name="photo_prompt">Από που θελετε να πάρετε φωτογραφία;</string>
+    <string name="photo_caption">Τράβηγμα φωτογραφίας</string>
+    <string name="gallery_prompt">Επιλογή από Συλλογή ή Cloud</string>
+    <string name="internet_prompt">Παρακαλείστε να συνδεθείτε στο internet για να ολοκληρωθεί αυτό το βημα</string>
+    <string name="ok">OK</string>
+    <string name="password_hint_text"><![CDATA[Ο κωδικός πρέπει να έχει τουλάχιστον έναν μικρό λατινικό χαρακτήρα, έναν κεφαλαίο λατινικό χαρακτήρα, έναν αριθμό και έναν ειδικό χαρακτήρα (`~!@#^*()_+=:{,/?}|). Δεν πρέπει να περιέχει χαρακτήρες κενού. Θα πρέπει να αποτελείται από 8 μέχρι 20 χαρακτήρες.]]></string>
+    <array name="categories">
+        <item>Βιολόγος</item>
+        <item>Δάσκαλος</item>
+        <item>Διάφοροι Εκπαιδευτές</item>
+        <item>Εκπαιδευτικός Ειδικής Αγωγής</item>
+        <item>Καθηγητής Καλλιτεχνικών</item>
+        <item>Καθηγητής Λοιπών Μαθημάτων</item>
+        <item>Καθηγητής Ξένων Γλωσσών</item>
+        <item>Καθηγητής Οικονομικών</item>
+        <item>Καθηγητής Πληροφορικής</item>
+        <item>Καθηγητής Τεχνικών Μαθημάτων</item>
+        <item>Καθηγητής Φυσικής Αγωγής</item>
+        <item>Μαθηματικός</item>
+        <item>Νηπιαγωγός - Βρεφονηπιαγωγός</item>
+        <item>Φιλόλογος</item>
+        <item>Φυσικός</item>
+        <item>Χημικός</item>
+    </array>
+    <array name="eidikotita_xenes_glwsses">
+        <item>Αγγλικά</item>
+        <item>Γαλλικά</item>
+        <item>Γερμανικά</item>
+        <item>Ιταλικά</item>
+        <item>Ισπανικά</item>
+        <item>Ρωσικά</item>
+        <item>Κινέζικα</item>
+        <item>Άλλη Γλώσσα</item>
+    </array>
+    <array name="eidikotita_kallitexnikwn">
+        <item>Καθηγητής Χορού</item>
+        <item>Καθηγητής Μουσικής</item>
+        <item>Καθηγητής Άλλων\nΚαλλιτεχνικών Μαθημάτων</item>
+        <item>Καθηγητής Καλών Τεχνών</item>
+    </array>
+    <array name="nomoi">
+        <item>Αττική</item>
+        <item>Αιτωλοακαρνανία</item>
+        <item>Αργολίδα</item>
+        <item>Αρκαδία</item>
+        <item>Άρτα</item>
+        <item>Αχαΐα</item>
+        <item>Βοιωτία</item>
+        <item>Γρεβενά</item>
+        <item>Δράμα</item>
+        <item>Δωδεκάνησα</item>
+        <item>Έβρος</item>
+        <item>Εύβοια</item>
+        <item>Ευρυτανία</item>
+        <item>Ζάκυνθος</item>
+        <item>Ηλεία</item>
+        <item>Ημαθία</item>
+        <item>Ηράκλειο</item>
+        <item>Θεσπρωτία</item>
+        <item>Ιωάννινα</item>
+        <item>Καβάλα</item>
+        <item>Καρδίτσα</item>
+        <item>Καστοριά</item>
+        <item>Κέρκυρα</item>
+        <item>Κεφαλληνία</item>
+        <item>Κιλκίς</item>
+        <item>Κοζάνη</item>
+        <item>Κορινθία</item>
+        <item>Κυκλάδες</item>
+        <item>Λακωνία</item>
+        <item>Λάρισα</item>
+        <item>Λασίθι</item>
+        <item>Λέσβος</item>
+        <item>Λευκάδα</item>
+        <item>Μαγνησία</item>
+        <item>Μεσσηνία</item>
+        <item>Ξάνθη</item>
+        <item>Πέλλα</item>
+        <item>Πιερία</item>
+        <item>Πρέβεζα</item>
+        <item>Ρέθυμνο</item>
+        <item>Ροδόπη</item>
+        <item>Σάμος</item>
+        <item>Σέρρες</item>
+        <item>Τρίκαλα</item>
+        <item>Φθιώτιδα</item>
+        <item>Φλώρινα</item>
+        <item>Φωκίδα</item>
+        <item>Χαλκιδική</item>
+        <item>Χανιά</item>
+        <item>Χίος</item>
+    </array>
+</resources>

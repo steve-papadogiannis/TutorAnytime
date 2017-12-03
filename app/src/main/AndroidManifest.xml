@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="papadogiannis.stefanos.tutoranytime" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <application android:name=".TutorAnytimeApp"
+                 android:allowBackup="true"
+                 android:icon="@drawable/owl_cropped_cap_circle"
+                 android:label="@string/app_name"
+                 android:supportsRtl="true"
+                 android:theme="@style/AppTheme" >
+
+        <activity android:name=".SplashScreen"
+                  android:launchMode="singleTask" >
+
+            <intent-filter>
+
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+
+            </intent-filter>
+
+        </activity>
+
+        <activity android:name=".Register"
+                  android:screenOrientation="portrait"
+                  android:windowSoftInputMode="adjustPan|adjustResize"
+                  android:launchMode="singleTask" >
+        </activity>
+
+        <activity android:name=".AddressActiv"
+                  android:screenOrientation="portrait"
+                  android:windowSoftInputMode="adjustPan|adjustResize"
+                  android:launchMode="singleTask" >
+        </activity>
+
+        <activity android:name=".PersonalData"
+                  android:screenOrientation="portrait"
+                  android:windowSoftInputMode="adjustPan|adjustResize"
+                  android:launchMode="singleTask" >
+        </activity>
+
+        <activity android:name=".JobInfo"
+                  android:screenOrientation="portrait"
+                  android:windowSoftInputMode="adjustPan|adjustResize"
+                  android:launchMode="singleTask" >
+        </activity>
+
+        <activity android:name=".Dispatcher"
+                  android:launchMode="singleTask" >
+        </activity>
+
+        <activity android:name=".Photo"
+                  android:screenOrientation="portrait"
+                  android:windowSoftInputMode="adjustPan|adjustResize"
+                  android:launchMode="singleTask" >
+        </activity>
+
+        <activity android:name=".Revision"
+                  android:screenOrientation="portrait"
+                  android:windowSoftInputMode="adjustPan|adjustResize"
+                  android:launchMode="singleTask" >
+        </activity>
+
+        <activity android:name=".Success"
+                  android:screenOrientation="portrait"
+                  android:windowSoftInputMode="adjustPan|adjustResize"
+                  android:launchMode="singleTask" >
+        </activity>
+
+        <activity android:name=".Map"
+                  android:screenOrientation="portrait"
+                  android:windowSoftInputMode="adjustPan|adjustResize"
+                  android:theme="@style/MyCompatTheme"
+                  android:launchMode="singleTask" >
+        </activity>
+
+        <activity android:name=".Login"
+                  android:screenOrientation="portrait"
+                  android:windowSoftInputMode="adjustPan|adjustResize"
+                  android:launchMode="singleTask" />
+
+        <activity android:name=".AddressActiv2"
+                  android:screenOrientation="portrait"
+                  android:windowSoftInputMode="adjustPan|adjustResize"
+                  android:launchMode="singleTask" >
+        </activity>
+
+        <activity android:name=".UserProfile"
+                  android:screenOrientation="portrait"
+                  android:windowSoftInputMode="adjustPan|adjustResize"
+                  android:launchMode="singleTask" >
+        </activity>
+
+        <meta-data android:name="com.google.android.maps.v2.API_KEY"
+                   android:value="" />
+
+        <meta-data android:name="com.google.android.gms.version"
+                   android:value="@integer/google_play_services_version" />
+
+    </application>
+
+</manifest>

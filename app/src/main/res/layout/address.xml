@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:layout_gravity="center"
+            android:text="Διεύθυνση"
+            android:textColor="#4099ff"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="40dp"/>
+
+        <EditText
+            android:id="@+id/address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:hint="Οδός"
+            android:padding="10dp"
+            android:textColor="@android:color/black"
+            android:textColorHint="@color/input_login_hint"
+            android:layout_marginBottom="10dp"
+            style="@style/editext_graybg"/>
+
+        <TextView
+            android:id="@+id/empty_address_error"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Η οδός είναι κενή!"
+            android:layout_marginBottom="10dp"
+            android:textColor="@android:color/holo_red_light"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/format_address_error"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Η οδός πρέπει να περιέχει μόνο γράμματα και ίσως τελεία και κενό"
+            android:layout_marginBottom="10dp"
+            android:textColor="@android:color/holo_red_light"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/big_address_error"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Η οδός πρέπει να είναι μέχρι 20 χαρακτήρες!"
+            android:layout_marginBottom="10dp"
+            android:textColor="@android:color/holo_red_light"
+            android:visibility="gone"/>
+
+        <EditText
+            android:id="@+id/arithmos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:hint="Αριθμός Οδού"
+            android:padding="10dp"
+            android:textColor="@android:color/black"
+            android:textColorHint="@color/input_login_hint"
+            android:layout_marginBottom="10dp"
+            style="@style/editext_graybg"/>
+
+        <TextView
+            android:id="@+id/empty_arithmos_error"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="O αριθμός οδού είναι κενός!"
+            android:layout_marginBottom="10dp"
+            android:textColor="@android:color/holo_red_light"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/format_arithmos_error"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="O αριθμός οδού δεν είναι σωστός"
+            android:layout_marginBottom="10dp"
+            android:textColor="@android:color/holo_red_light"
+            android:visibility="gone"/>
+
+        <EditText
+            android:id="@+id/perioxi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:hint="Δήμος"
+            android:textColor="@android:color/black"
+            android:padding="10dp"
+            android:textColorHint="@color/input_login_hint"
+            android:layout_marginBottom="10dp"
+            style="@style/editext_graybg"/>
+
+        <TextView
+            android:id="@+id/empty_dimos_error"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Ο δήμος είναι κενός!"
+            android:layout_marginBottom="10dp"
+            android:textColor="@android:color/holo_red_light"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/format_dimos_error"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="O δήμος δεν είναι σωστός"
+            android:layout_marginBottom="10dp"
+            android:textColor="@android:color/holo_red_light"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/big_dimos_error"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="O δήμος πρέπει να είναι μέχρι 35 χαρακτήρες!"
+            android:layout_marginBottom="10dp"
+            android:textColor="@android:color/holo_red_light"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/nomos_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Νομός"
+            android:layout_marginBottom="10dp"
+            android:textColor="#4099ff"
+            android:visibility="visible"/>
+
+        <Spinner
+            android:id="@+id/nomos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:hint="Νομός"
+            android:padding="10dp"
+            android:textColorHint="@color/input_login_hint"
+            android:layout_marginBottom="10dp"/>
+
+        <Button
+            android:layout_marginTop="40dp"
+            android:paddingLeft="40dp"
+            android:id="@+id/next"
+            style="@style/btn_white_large"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Επόμενο"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:drawableRight="@drawable/arrow_right"/>
+
+        <Button
+            android:paddingRight="40dp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/back"
+            android:layout_gravity="center"
+            style="@style/btn_white_large"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Προηγούμενο"
+            android:drawableLeft="@drawable/arrow_left"
+            android:layout_marginBottom="30dp"/>
+
+    </LinearLayout>
+
+</ScrollView>
+
+

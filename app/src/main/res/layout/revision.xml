@@ -1,0 +1,601 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Login"
+    android:id="@+id/login_form"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center"
+    android:padding="20dp" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:layout_gravity="center"
+            android:text="Προσωπικά Στοιχεία"
+            android:textColor="#4099ff"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="40dp"/>
+
+        <TextView
+            android:id="@+id/onoma_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:textColor="@android:color/black"
+            android:padding="10dp"
+            style="@style/textView_graybg"/>
+
+        <TextView
+            android:id="@+id/epitheto_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:padding="10dp"
+            android:gravity="center"
+            android:textColor="@android:color/black"
+            style="@style/textView_graybg" />
+
+        <TextView
+            android:id="@+id/tilefwno_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:padding="10dp"
+            android:gravity="center"
+            android:textColor="@android:color/black"
+            style="@style/textView_graybg" />
+
+        <TextView
+            android:id="@+id/email_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:padding="10dp"
+            android:gravity="center"
+            android:textColor="@android:color/black"
+            style="@style/textView_graybg" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:layout_gravity="center"
+            android:text="Διεύθυνση"
+            android:textColor="#4099ff"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="40dp"/>
+
+        <TextView
+            android:id="@+id/odos_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:padding="10dp"
+            style="@style/textView_graybg"
+            android:textColor="@android:color/black"/>
+
+        <TextView
+            android:id="@+id/arithmos_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:padding="10dp"
+            style="@style/textView_graybg"
+            android:textColor="@android:color/black"/>
+
+        <TextView
+            android:id="@+id/perioxi_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:padding="10dp"
+            android:gravity="center"
+            android:textColor="@android:color/black"
+            style="@style/textView_graybg" />
+
+        <Spinner
+            android:id="@+id/nomos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            android:gravity="center"
+            android:textColor="@android:color/black"/>
+
+        <View
+            android:layout_marginTop="40dp"
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:background="#4099ff"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Πληροφορίες Παροχής Εκπαιδευτικής Υπηρεσίας"
+            android:textColor="#4099ff"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="40dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Κατηγορία"
+            android:textSize="14sp"
+            android:textColor="#4099ff"
+            android:layout_marginBottom="10dp"/>
+
+        <Spinner
+            android:id="@+id/category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            android:gravity="center"
+            android:textColor="@android:color/black"/>
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/eidikotita_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Ειδικότητα"
+            android:textSize="14sp"
+            android:textColor="#4099ff"
+            android:layout_marginBottom="10dp"/>
+
+        <Spinner
+            android:id="@+id/eidikotita"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            android:gravity="center"
+            android:textColor="@android:color/black"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Πιστοποίηση"
+            android:textSize="14sp"
+            android:textColor="#4099ff"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:id="@+id/pistopoiisi_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            android:lines="6"
+            android:gravity="top|left"
+            android:textColor="@android:color/black"
+            style="@style/textView_graybg"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Αγγελία"
+            android:textSize="14sp"
+            android:textColor="#4099ff"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:id="@+id/aggelia_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            android:lines="8"
+            android:gravity="top|left"
+            android:textColor="@android:color/black"
+            style="@style/textView_graybg" />
+
+        <LinearLayout
+            android:id="@+id/second_set"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:visibility="gone">
+
+            <View
+                android:layout_marginTop="40dp"
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:background="#4099ff"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Πληροφορίες Παροχής Εκπαιδευτικής Υπηρεσίας 2"
+                android:textColor="#4099ff"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="40dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Κατηγορία"
+                android:textSize="14sp"
+                android:textColor="#4099ff"
+                android:layout_marginBottom="10dp"/>
+
+            <Spinner
+                android:id="@+id/category2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@android:color/black"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:id="@+id/eidikotita2_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Ειδικότητα"
+                android:textSize="14sp"
+                android:textColor="#4099ff"
+                android:layout_marginBottom="10dp"
+                android:visibility="visible"/>
+
+            <Spinner
+                android:id="@+id/eidikotita2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="@android:color/black"
+                android:gravity="center"
+                android:layout_marginBottom="10dp"
+                android:visibility="visible"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Πιστοποίηση"
+                android:textSize="14sp"
+                android:textColor="#4099ff"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:id="@+id/pistopoiisi2_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="10dp"
+                android:lines="6"
+                android:gravity="top|left"
+                android:textColor="@android:color/black"
+                style="@style/textView_graybg"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Αγγελία"
+                android:textSize="14sp"
+                android:textColor="#4099ff"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:id="@+id/aggelia2_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="10dp"
+                android:lines="8"
+                android:gravity="top|left"
+                android:textColor="@android:color/black"
+                style="@style/textView_graybg" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/third_set"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:visibility="gone">
+
+            <View
+                android:layout_marginTop="40dp"
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:background="#4099ff"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Πληροφορίες Παροχής Εκπαιδευτικής Υπηρεσίας 3"
+                android:textColor="#4099ff"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="40dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Κατηγορία"
+                android:textSize="14sp"
+                android:textColor="#4099ff"
+                android:layout_marginBottom="10dp"/>
+
+            <Spinner
+                android:id="@+id/category3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@android:color/black"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:id="@+id/eidikotita3_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Ειδικότητα"
+                android:textSize="14sp"
+                android:textColor="#4099ff"
+                android:layout_marginBottom="10dp"
+                android:visibility="visible"/>
+
+            <Spinner
+                android:id="@+id/eidikotita3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="@android:color/black"
+                android:gravity="center"
+                android:layout_marginBottom="10dp"
+                android:visibility="visible"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Πιστοποίηση"
+                android:textSize="14sp"
+                android:textColor="#4099ff"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:id="@+id/pistopoiisi3_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="10dp"
+                android:lines="6"
+                android:gravity="top|left"
+                android:textColor="@android:color/black"
+                style="@style/textView_graybg"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Αγγελία"
+                android:textSize="14sp"
+                android:textColor="#4099ff"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:id="@+id/aggelia3_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="10dp"
+                android:lines="8"
+                android:gravity="top|left"
+                android:textColor="@android:color/black"
+                style="@style/textView_graybg" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/forth_set"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:visibility="gone">
+
+            <View
+                android:layout_marginTop="40dp"
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:background="#4099ff"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Πληροφορίες Παροχής Εκπαιδευτικής Υπηρεσίας 4"
+                android:textColor="#4099ff"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="40dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Κατηγορία"
+                android:textSize="14sp"
+                android:textColor="#4099ff"
+                android:layout_marginBottom="10dp"/>
+
+            <Spinner
+                android:id="@+id/category4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@android:color/black"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:id="@+id/eidikotita4_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Ειδικότητα"
+                android:textSize="14sp"
+                android:textColor="#4099ff"
+                android:layout_marginBottom="10dp"
+                android:visibility="visible"/>
+
+            <Spinner
+                android:id="@+id/eidikotita4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@android:color/black"
+                android:layout_marginBottom="10dp"
+                android:visibility="visible"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Πιστοποίηση"
+                android:textSize="14sp"
+                android:textColor="#4099ff"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:id="@+id/pistopoiisi4_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="10dp"
+                android:lines="6"
+                android:gravity="top|left"
+                android:textColor="@android:color/black"
+                style="@style/textView_graybg"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Αγγελία"
+                android:textSize="14sp"
+                android:textColor="#4099ff"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:id="@+id/aggelia4_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="10dp"
+                android:lines="8"
+                android:gravity="top|left"
+                android:textColor="@android:color/black"
+                style="@style/textView_graybg" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/photo_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:layout_gravity="center"
+                android:text="Φωτογραφία"
+                android:textColor="#4099ff"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="30dp"/>
+
+            <ImageView
+                android:id="@+id/photo"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+
+        <Button
+            android:layout_marginTop="40dp"
+            android:id="@+id/next"
+            style="@style/btn_white_large"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="40dp"
+            android:text="Επιβεβαίωση"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:drawableRight="@drawable/arrow_right"/>
+
+        <Button
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:id="@+id/back"
+            style="@style/btn_white_large"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="40dp"
+            android:text="Προηγούμενο"
+            android:drawableLeft="@drawable/arrow_left"/>
+
+    </LinearLayout>
+
+</ScrollView>
+
+

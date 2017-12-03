@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Register"
+    android:id="@+id/signup_form"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center"
+    android:padding="20dp" >
+
+    <LinearLayout
+        android:id="@+id/linear1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" >
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center"
+            android:src="@drawable/owl_cropped_cap_circle"
+            android:layout_marginBottom="40dp"/>
+
+        <EditText
+            android:id="@+id/username_edit_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:hint="Όνομα Χρήστη"
+            android:drawableLeft="@drawable/ic_username"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:inputType="textEmailAddress"
+            android:maxLines="1"
+            android:layout_gravity="center"
+            android:textColor="@android:color/black"
+            style="@style/editext_graybg"
+            android:textColorHint="@color/input_login_hint" />
+
+        <TextView
+            android:id="@+id/used_username_error"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Το όνομα χρήστη χρησιμοποιείται!"
+            android:layout_marginBottom="10dp"
+            android:textColor="@android:color/holo_red_light"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/empty_username_error"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Παρακαλώ εισάγετε όνομα χρήστη!"
+            android:layout_marginBottom="10dp"
+            android:textColor="@android:color/holo_red_light"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/small_username_error"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Το όνομα χρήστη πρέπει να έχει τουλάχιστον 8 χαρακτήρες"
+            android:layout_marginBottom="10dp"
+            android:textColor="@android:color/holo_red_light"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/big_username_error"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Το όνομα χρήστη πρέπει να έχει μέχρι 20 χαρακτήρες"
+            android:layout_marginBottom="10dp"
+            android:textColor="@android:color/holo_red_light"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/format_username_error"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Το όνομα χρήστη έχει λάθος δομή"
+            android:textColor="@android:color/holo_red_light"
+            android:layout_marginBottom="10dp"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/format_username_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Το όνομα χρήστη πρέπει να έχει λατινικούς χαρακτήρες και μπορεί να έχει αριθμούς, παύλες και κάτω παύλες. Θα πρέπει να αποτελείται από 8 μέχρι 20 χαρακτήρες."
+            android:layout_marginBottom="10dp"
+            android:textColor="@android:color/holo_green_dark"
+            android:visibility="gone"/>
+
+        <EditText
+            android:id="@+id/password_edit_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:hint="Κωδικός"
+            android:padding="10dp"
+            android:maxLines="1"
+            android:inputType="textPassword"
+            style="@style/editext_graybg"
+            android:drawableLeft="@drawable/ic_pwd"
+            android:singleLine="true"
+            android:textColor="@android:color/black"
+            android:textColorHint="@color/input_login_hint" />
+
+        <TextView
+            android:id="@+id/empty_password_error"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Παρακαλώ εισάγετε κωδικό!"
+            android:layout_marginBottom="10dp"
+            android:textColor="@android:color/holo_red_light"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/small_password_error"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Ο κωδικός πρέπει να έχει τουλάχιστον 8 χαρακτήρες"
+            android:layout_marginBottom="10dp"
+            android:textColor="@android:color/holo_red_light"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/big_password_error"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Ο κωδικός πρέπει να έχει μέχρι 20 χαρακτήρες"
+            android:layout_marginBottom="10dp"
+            android:textColor="@android:color/holo_red_light"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/format_password_error"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Ο κωδικός έχει λάθος δομή"
+            android:textColor="@android:color/holo_red_light"
+            android:layout_marginBottom="10dp"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/format_password_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/password_hint_text"
+            android:layout_marginBottom="10dp"
+            android:textColor="@android:color/holo_green_dark"
+            android:visibility="gone"/>
+
+        <EditText
+            android:id="@+id/password_again_edit_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Επιβεβαίωση Κωδικού"
+            android:layout_gravity="center"
+            android:inputType="textPassword"
+            android:padding="10dp"
+            android:maxLines="1"
+            android:drawableLeft="@drawable/ic_pwd"
+            style="@style/editext_graybg"
+            android:singleLine="true"
+            android:textColor="@android:color/black"
+            android:textColorHint="@color/input_login_hint" />
+
+        <TextView
+            android:id="@+id/empty_password_again_error"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Παρακαλώ εισάγετε τον κωδικό ξανά!"
+            android:layout_marginBottom="10dp"
+            android:textColor="@android:color/holo_red_light"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/different_password_again_error"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Οι δυο κωδικοί δεν μοιάζουν!"
+            android:layout_marginBottom="10dp"
+            android:textColor="@android:color/holo_red_light"
+            android:visibility="gone"/>
+
+        <EditText
+            android:id="@+id/invisible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/register_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_gravity="center"
+            android:text="Επόμενο"
+            android:paddingLeft="40dp"
+            android:drawableRight="@drawable/arrow_right"
+            android:textColor="@color/white"
+            style="@style/btn_white_large"/>
+
+        <Button
+            android:id="@+id/login_link_button"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@null"
+            android:text="Είστε ήδη μέλος; Συνδεθείτε τώρα!"
+            android:textAllCaps="false"
+            android:textColor="#4099ff"
+            android:textSize="15sp"/>
+
+    </LinearLayout>
+
+</ScrollView>

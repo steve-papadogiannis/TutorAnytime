@@ -1,0 +1,9 @@
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Map">
+    <item
+        android:id="@+id/logout"
+        android:title="Αποσύνδεση"
+        android:showAsAction="never" />
+</menu>

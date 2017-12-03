@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Login"
+    android:id="@+id/login_form"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center"
+    android:padding="20dp" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:layout_gravity="center"
+            android:text="Προσωπικά Στοιχεία"
+            android:textColor="#4099ff"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="40dp"/>
+
+        <EditText
+            android:id="@+id/name_edit_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:hint="Όνομα"
+            android:inputType="textEmailAddress"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:maxLines="1"
+            android:textColor="@android:color/black"
+            style="@style/editext_graybg"
+            android:textColorHint="@color/input_login_hint"/>
+
+        <TextView
+            android:id="@+id/empty_name_error"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Παρακαλώ εισάγετε το όνομά σας"
+            android:layout_marginBottom="10dp"
+            android:textColor="@android:color/holo_red_light"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/small_name_error"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Το όνομα πρέπει να έχει πάνω από 2 χαρακτήρες!"
+            android:layout_marginBottom="10dp"
+            android:textColor="@android:color/holo_red_light"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/format_name_error"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Το όνομα έχει λάθος μορφή"
+            android:layout_marginBottom="10dp"
+            android:textColor="@android:color/holo_red_light"
+            android:visibility="gone"/>
+
+        <EditText
+            android:id="@+id/surname_edit_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:hint="Επίθετο"
+            android:inputType="text"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:maxLines="1"
+            android:gravity="center"
+            android:textColor="@android:color/black"
+            android:textColorHint="@color/input_login_hint"
+            style="@style/editext_graybg" />
+
+        <TextView
+            android:id="@+id/empty_surname_error"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Παρακαλώ εισάγετε το επίθετό σας"
+            android:layout_marginBottom="10dp"
+            android:textColor="@android:color/holo_red_light"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/small_surname_error"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Το επίθετο πρέπει να έχει πάνω από 2 χαρακτήρες!"
+            android:layout_marginBottom="10dp"
+            android:textColor="@android:color/holo_red_light"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/format_surname_error"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Το επίθετο έχει λάθος μορφή"
+            android:layout_marginBottom="10dp"
+            android:textColor="@android:color/holo_red_light"
+            android:visibility="gone"/>
+
+        <EditText
+            android:id="@+id/telephone_edit_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:hint="Τηλέφωνο"
+            android:inputType="number"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:maxLines="1"
+            android:gravity="center"
+            android:textColor="@android:color/black"
+            android:textColorHint="@color/input_login_hint"
+            style="@style/editext_graybg" />
+
+        <TextView
+            android:id="@+id/empty_telephone_error"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Παρακαλώ εισάγετε το τηλέφωνό σας"
+            android:layout_marginBottom="10dp"
+            android:textColor="@android:color/holo_red_light"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/small_telephone_error"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Το τηλέφωνο πρέπει να αποτελείται 10 ψηφία"
+            android:layout_marginBottom="10dp"
+            android:textColor="@android:color/holo_red_light"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/not_digit_telephone_error"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Το τηλέφωνο πρέπει να περιέχει μόνο αριθμούς!"
+            android:layout_marginBottom="10dp"
+            android:textColor="@android:color/holo_red_light"
+            android:visibility="gone"/>
+
+        <EditText
+            android:id="@+id/email_edit_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:maxLines="1"
+            android:gravity="center"
+            android:textColor="@android:color/black"
+            android:textColorHint="@color/input_login_hint"
+            style="@style/editext_graybg" />
+
+        <TextView
+            android:id="@+id/empty_email_error"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Παρακαλώ εισάγετε το email σας"
+            android:layout_marginBottom="10dp"
+            android:textColor="@android:color/holo_red_light"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/format_email_error"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Το email πρέπει να είναι της μορφής abc@def.gh!"
+            android:layout_marginBottom="10dp"
+            android:textColor="@android:color/holo_red_light"
+            android:visibility="gone"/>
+
+        <Button
+            android:layout_marginTop="40dp"
+            android:id="@+id/next"
+            style="@style/btn_white_large"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="40dp"
+            android:text="Επόμενο"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:drawableRight="@drawable/arrow_right"/>
+
+        <Button
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:id="@+id/back"
+            style="@style/btn_white_large"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="40dp"
+            android:text="Προηγούμενο"
+            android:drawableLeft="@drawable/arrow_left"
+            android:layout_marginBottom="30dp"/>
+
+    </LinearLayout>
+
+</ScrollView>
+

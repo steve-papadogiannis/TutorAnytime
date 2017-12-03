@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:weightSum="5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:layout_gravity="center"
+            android:text="Διεύθυνση"
+            android:textColor="#4099ff"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="(Θα χρησιμοποιηθεί ως αρχικό σημείο στον χάρτη, μπορεί το σημείο να μην είναι ακριβές)"
+            android:textColor="#4099ff"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"/>
+
+    </LinearLayout>
+
+    <fragment
+        android:id="@+id/map"
+        android:layout_weight="2.5"
+        android:name="com.google.android.gms.maps.MapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        android:layout_gravity="center">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:layout_gravity="center"
+            android:paddingRight="5dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:paddingTop="30dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/empty_map_error"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Δεν ήταν δυνατός ο εντοπισμός αρχικού σημείου"
+                android:textColor="@android:color/holo_red_light"
+                android:visibility="gone"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp">
+
+                <Button
+                    android:layout_marginTop="10dp"
+                    android:paddingLeft="40dp"
+                    android:id="@+id/next"
+                    style="@style/btn_white_large"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Επόμενο"
+                    android:gravity="center"
+                    android:drawableRight="@drawable/arrow_right"/>
+
+                <Button
+                    android:paddingRight="40dp"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/back"
+                    style="@style/btn_white_large"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Προηγούμενο"
+                    android:drawableLeft="@drawable/arrow_left"
+                    android:layout_marginBottom="10dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
